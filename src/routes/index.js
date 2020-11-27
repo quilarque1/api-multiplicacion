@@ -13,7 +13,7 @@ router.get('/multiplicacion/:operacion', (req, res, next) => {
 		const multiplicacionService = new MultiplicacionService();
 
 		res.status(200).json({
-			resta: multiplicacionService.getMultiplicacion(req.params.operacion)
+			multiplicacion: multiplicacionService.getMultiplicacion(req.params.operacion)
 		});
 
 	} catch (e) {
